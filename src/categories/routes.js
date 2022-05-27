@@ -12,7 +12,7 @@ router.get('/:id',   cCat.getCategoryMovies)
 // Ruta inicial de portada
 router.get('/', (req, res) => {
     // Solo mostrar que estamos dentro de la carpeta y enlaces a las rutas
-    res.render('movies/index');
+    res.render('categories/index');
 });
 
 module.exports = router;

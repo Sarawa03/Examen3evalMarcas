@@ -1,4 +1,4 @@
-const mMovie = require('../models/movie.model');
+const mMovie = require('../models/movie_detail.model');
 
 exports.getLast = async (req, res) => {
 
