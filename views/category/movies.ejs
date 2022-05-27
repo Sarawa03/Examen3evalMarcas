@@ -1,15 +1,15 @@
 <%- include('../base/base_header'); -%>
 <body>
-    <h1><span class="texto"><%= data.category %> </span></h1>
+    <h1><span class="texto"><%= category.title %> </span></h1>
     <% for (var i = 0; i < 20; i++) { %>
         <div class="container">
             <div class="row">
                 <p>
-                    <%= data.movies[i].title %> 
+                    <%= movies[i].title %> 
                     
             </div>
             
-            <a class="btn btn-light" href="/category/<%=categories[i]._id%>">Detalles</a>
+            
         </div>
 
     <% } %>
