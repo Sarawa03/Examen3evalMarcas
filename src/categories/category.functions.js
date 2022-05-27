@@ -6,7 +6,7 @@ exports.getList = async (req, res) => {
 
     // TODO: Hacer la pantalla de categorias, con enlaces a cada una de las categorias
     // Usar el id de la categoria para el enlace, y que lleve a la otra ruta
-    res.render('categories/index', { categories })
+    res.render('category/index', { categories })
 
 }
 
