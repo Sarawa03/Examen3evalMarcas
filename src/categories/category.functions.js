@@ -12,7 +12,7 @@ exports.getList = async (req, res) => {
 
 exports.getCategoryMovies = async (req, res) => {
     const {body, params, query} = req
-    const { id } = params.id || query.id || body.id
+    const id  = params.id || query.id || body.id
 
     const category = await mCat.findById(id)
     if (!category) {
