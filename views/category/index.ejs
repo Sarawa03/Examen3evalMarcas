@@ -1,17 +1,9 @@
 <%- include('../base/base_header'); -%> 
 
 <body>
-    <% for (var i = 0; i < movies.length; i++) { %>
-
-    
-        <tr>
-            <td><%= categories[i]._id %></td>
-            <td><%= categories[i].title %></td>
-            <td><%= categories[i].name %></td>
-            <td><%= categories[i].description %></td>
-            <td><%= categories[i].release_date %></td>
-        </tr>
-    <% } %>
+    <a class="btn btn-light" href="/category/">Detalles categorias</a>
+    <a class="btn btn-light" href="/category/list">Categorias</a>
+    <a class="btn btn-light" href="/">Atras</a>
 </body>
 
 <%- include('../base/base_footer'); -%>

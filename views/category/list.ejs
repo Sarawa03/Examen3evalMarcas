@@ -1,0 +1,18 @@
+<%- include('../base/base_header'); -%> 
+
+<body>
+    <% for (var i = 0; i < categories.length; i++) { %>
+        <div class="container">
+            <div class="row">
+                <p><%= categories[i]._id %> 
+                    <%= categories[i].title %> 
+                    <%= categories[i].name %> 
+                    <%= categories[i].description %> 
+                    <%= categories[i].release_date %></p>
+            </div>
+        </div>
+
+    <% } %>
+</body>
+
+<%- include('../base/base_footer'); -%>

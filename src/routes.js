@@ -3,7 +3,7 @@ const router  = express.Router();
 
 router.use('/movies',     require('./movies/routes'))
 router.use('/actor',      require('./actor/routes'))
-router.use('/categories', require('./categories/routes'))
+router.use('/category', require('./categories/routes'))
 
 // Ruta inicial de portada
 router.get('/', (req, res) => {

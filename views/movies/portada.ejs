@@ -1,15 +1,21 @@
 <%- include('../base/base_header'); -%>
 <body>
     <% for (var i = 0; i < movies.length; i++) { %>
-
+        <div class="container">
+            <div class="row">
+                    <div>
+                        <p> <span class="texto">ID: </span><%= movies[i]._id %></p>
+                        <p> <span class="texto">Titulo: </span> <%= movies[i].title %></p>
+                        <p> <span class="texto">poster: </span><%= movies[i].poster_path %></p>
+                        <p> <span class="texto">backdrop: </span><%= movies[i].backdrop_path %></p>
+                        <p> <span class="texto">Release Date: </span><%= movies[i].release_date %></p>
+                    </div>
+                    
+                
+            </div>
+        </div>
     
-        <tr>
-            <td><%= movies[i]._id %></td>
-            <td><%= movies[i].title %></td>
-            <td><%= movies[i].poster_path %></td>
-            <td><%= movies[i].backdrop_path %></td>
-            <td><%= movies[i].release_date %></td>
-        </tr>
+
     <% } %>
 </body>
 <%- include('../base/base_footer'); -%>
